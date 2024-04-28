@@ -13,6 +13,14 @@ public class TestController {
     //ResponseBody returns a plain text output with no template. (So no front end fancyness. Just text)
     @ResponseBody
     public String ough(){
-      return "Oughhhhhh";
+        String oughh = "";
+        for(int i = 0; i < 50000; i++){
+            oughh += "h";
+            if(i % 100 == 0 && i != 0){
+                oughh += "\n";
+            }
+        }
+
+        return "ough" + oughh;
     };
 }
