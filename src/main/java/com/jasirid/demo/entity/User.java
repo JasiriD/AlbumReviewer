@@ -28,9 +28,19 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    //Assigns these fields to columns in a table
+    @Column(name = "first_name")
     private String firstName;
+
+    @Column(name = "last_name")
     private String lastName;
+
+    @Column(name = "username")
     private String username;
+
+    //States this field cannot be empty and must be unique to each object
+    @Column(name = "email", nullable = false, unique = true)
     private String email;
 
 
