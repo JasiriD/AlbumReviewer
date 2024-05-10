@@ -36,10 +36,11 @@ public class User {
     @Column(name = "last_name")
     private String lastName;
 
-    @Column(name = "username")
+    //States this field cannot be empty and must be unique to each object
+    @Column(name = "username", nullable = false, unique = true)
     private String username;
 
-    //States this field cannot be empty and must be unique to each object
+    //Same as username
     @Column(name = "email", nullable = false, unique = true)
     private String email;
 
