@@ -38,7 +38,7 @@ public class User {
 
     //States this field cannot be empty and must be unique to each object
     @Column(name = "username", nullable = false, unique = true)
-    private String username;
+    private String userName;
 
     //Same as username
     @Column(name = "email", nullable = false, unique = true)
