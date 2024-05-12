@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+//This class is made to transfer the data of a user class between the client and server
+
 //Lombok annotations
 @Getter
 @Setter
