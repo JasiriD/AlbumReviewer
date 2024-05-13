@@ -2,6 +2,7 @@ package com.jasirid.demo.controller;
 
 import com.jasirid.demo.dto.UserDTO;
 import com.jasirid.demo.service.UserService;
+import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 //RestController annotation allows this class to handle HTTP requests
 @RestController
 //Base url for rest APIs that are built within this controller
+@AllArgsConstructor
 @RequestMapping("/api/users")
 public class UserController {
 

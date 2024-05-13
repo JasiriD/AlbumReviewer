@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Adding UserController class">
+    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="First time sitting down for the day,also made some comments in UserController.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +84,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.PodiumApplication">
+  <component name="RunManager" selected="Gradle.AlbumReviewer [bootRun]">
     <configuration name="PodiumApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jasirid.demo.PodiumApplication" />
       <module name="demo.main" />
@@ -118,8 +122,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PodiumApplication" />
         <item itemvalue="Gradle.AlbumReviewer [bootRun]" />
+        <item itemvalue="Application.PodiumApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715503406709</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="First time sitting down for the day,also made some comments in UserController.java">
+      <option name="closed" value="true" />
+      <created>1715563198328</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715563198328</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,6 +224,7 @@
     <MESSAGE value="Finishing up user JPA entity" />
     <MESSAGE value="Creating UserService interface as well as UserServiceImpl class" />
     <MESSAGE value="Adding UserController class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding UserController class" />
+    <MESSAGE value="First time sitting down for the day,also made some comments in UserController.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="First time sitting down for the day,also made some comments in UserController.java" />
   </component>
 </project>

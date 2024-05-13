@@ -15,7 +15,7 @@ import lombok.Setter;
 public class UserDTO {
 
     //Adding fields from User class
-    private int id;
+    private long id;
     private String firstName;
     private String lastName;
     private String userName;

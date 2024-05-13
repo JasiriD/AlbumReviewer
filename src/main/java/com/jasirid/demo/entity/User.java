@@ -27,7 +27,7 @@ public class User {
     //These annotations tell the database to automatically increment the primary entity (the id)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 
     //Assigns these fields to columns in a table
     @Column(name = "first_name")

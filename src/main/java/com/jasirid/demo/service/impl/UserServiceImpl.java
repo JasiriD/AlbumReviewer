@@ -12,15 +12,15 @@ import org.springframework.stereotype.Service;
 //Impl stands for implementation, just in case you forget for some odd reason
 @Service
 @AllArgsConstructor
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl implements UserService{
 
     private UserRepository userRepository;
 
     //createUser method
     @Override
-    public UserDTO createUser(UserDTO userdto) {
+    public UserDTO createUser(UserDTO userDTO) {
         //taking dto from input and converting it to an entity using method from UserMapper class
-        User user = UserMapper.mapToUserEntity(userdto);
+        User user = UserMapper.mapToUserEntity(userDTO);
         User savedUser = userRepository.save(user);
 
         //returning savedUser back to client as a DTO
