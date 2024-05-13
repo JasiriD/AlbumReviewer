@@ -13,10 +13,12 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserDTO {
-    //adding fields from User class
-    private int id;
+
+    //Adding fields from User class
+    private long id;
     private String firstName;
     private String lastName;
     private String userName;
     private String email;
+
 }

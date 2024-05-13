@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Finishing up user JPA entity">
+    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="First time sitting down for the day,also made some comments in UserController.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +35,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -73,12 +79,25 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "android.gradle.sync.needed": "true",
-    "git-widget-placeholder": "createEmployeeJPAEntity",
+    "git-widget-placeholder": "addUserRestAPI",
     "last_opened_file_path": "C:/Users/Jasiri/Documents/LaunchCode/LC IntelliJ/CodingEventsJavaAddBootstrap",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.AlbumReviewer [bootRun]">
+    <configuration name="PodiumApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jasirid.demo.PodiumApplication" />
+      <module name="demo.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jasirid.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AlbumReviewer [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -104,6 +123,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.AlbumReviewer [bootRun]" />
+        <item itemvalue="Application.PodiumApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -156,8 +176,43 @@
       <option name="project" value="LOCAL" />
       <updated>1715149598248</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Creating UserService interface as well as UserServiceImpl class">
+      <option name="closed" value="true" />
+      <created>1715503099754</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715503099754</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Adding UserController class">
+      <option name="closed" value="true" />
+      <created>1715503406709</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715503406709</updated>
+    </task>
+    <task id="LOCAL-00008" summary="First time sitting down for the day,also made some comments in UserController.java">
+      <option name="closed" value="true" />
+      <created>1715563198328</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715563198328</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial branch commit" />
@@ -167,6 +222,9 @@
     <MESSAGE value="Crea" />
     <MESSAGE value="Creating new packages" />
     <MESSAGE value="Finishing up user JPA entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finishing up user JPA entity" />
+    <MESSAGE value="Creating UserService interface as well as UserServiceImpl class" />
+    <MESSAGE value="Adding UserController class" />
+    <MESSAGE value="First time sitting down for the day,also made some comments in UserController.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="First time sitting down for the day,also made some comments in UserController.java" />
   </component>
 </project>
