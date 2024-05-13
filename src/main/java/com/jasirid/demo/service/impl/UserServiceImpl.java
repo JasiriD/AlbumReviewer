@@ -30,9 +30,15 @@ public class UserServiceImpl implements UserService{
 
     //Method for finding users by id
     @Override
+    //Method returns a UserDTO
     public UserDTO getUserByID(int userID) {
-        userRepository.findById(userID)
-                .orElseThrow(() -> new NotFoundException("There is no user with the given id!"));
-        return null;
+        //findByID returns a user object, so here we apply that to a new user object
+        User user = userRepository.findById(userID)
+                //throwing exception if there is not a user with userID ID
+                .orElseThrow(() ->
+                        new NotFoundException("There is no user with the given id!"));
+
+        //Converting findById's user object into an employee DTO to return proper data type for method
+        return UserMapper.mapToUserDTO(user);
     }
 }
