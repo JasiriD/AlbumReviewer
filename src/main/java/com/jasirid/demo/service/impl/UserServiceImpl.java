@@ -9,6 +9,9 @@ import com.jasirid.demo.service.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 //Implementing UserService interface
 //Impl stands for implementation, just in case you forget for some odd reason
 @Service
@@ -40,5 +43,13 @@ public class UserServiceImpl implements UserService{
 
         //Converting findById's user object into an employee DTO to return proper data type for method
         return UserMapper.mapToUserDTO(user);
+    }
+
+    //getAllUsers method / gets all users
+    @Override
+    public List<UserDTO> getAllUsers() {
+        List<User> users = userRepository.findAll();
+        return users.stream().map((user) -> UserMapper.mapToUserDTO(user))
+                .collect(Collectors.toList());
     }
 }
