@@ -21,13 +21,13 @@ import lombok.Setter;
 @Entity
 @Table(name = "users")
 //User class within entity package
-public class User {
+public class    User {
 
     //Fields
     //These annotations tell the database to automatically increment the primary entity (the id)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private int id;
 
     //Assigns these fields to columns in a table
     @Column(name = "first_name")

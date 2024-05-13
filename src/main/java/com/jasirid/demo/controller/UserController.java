@@ -1,14 +1,12 @@
 package com.jasirid.demo.controller;
 
 import com.jasirid.demo.dto.UserDTO;
+import com.jasirid.demo.entity.User;
 import com.jasirid.demo.service.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 //RestController annotation allows this class to handle HTTP requests
@@ -32,5 +30,19 @@ public class UserController {
         UserDTO savedUser = userService.createUser(userDTO);
         return new ResponseEntity<>(savedUser, HttpStatus.CREATED);
     }
+
+    //Get User REST API
+    //GetMapping annotation tells spring that this is a get request
+    @GetMapping("{id}")
+    //passing ID to method
+    //I think PathVariable here is passing the ID from the url above to the userID method argument.
+    public ResponseEntity<UserDTO> getUserByID(@PathVariable("id") int userID){
+        //userService.getUserByID method returns userDTO and assigns it to a new userDTO object
+        UserDTO userDTO = userService.getUserByID(userID);
+
+
+        return ResponseEntity.ok(userDTO);
+    }
+
 
 }

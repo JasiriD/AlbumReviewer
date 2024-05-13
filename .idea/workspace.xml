@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="First time sitting down for the day,also made some comments in UserController.java">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Created get method within userController" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +72,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "android.gradle.sync.needed": "true",
-    "git-widget-placeholder": "addUserRestAPI",
+    "git-widget-placeholder": "addGetUserRestAPI",
     "last_opened_file_path": "C:/Users/Jasiri/Documents/LaunchCode/LC IntelliJ/CodingEventsJavaAddBootstrap",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
@@ -200,7 +193,39 @@
       <option name="project" value="LOCAL" />
       <updated>1715563198328</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Created getUserByID method in UserService">
+      <option name="closed" value="true" />
+      <created>1715571661598</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715571661598</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Creating NotFoundException class">
+      <option name="closed" value="true" />
+      <created>1715572089544</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715572089544</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Created getUserByID method, also changed ID back to an int">
+      <option name="closed" value="true" />
+      <created>1715572432340</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715572432340</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Created get method within userController">
+      <option name="closed" value="true" />
+      <created>1715573241170</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715573241170</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +250,10 @@
     <MESSAGE value="Creating UserService interface as well as UserServiceImpl class" />
     <MESSAGE value="Adding UserController class" />
     <MESSAGE value="First time sitting down for the day,also made some comments in UserController.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="First time sitting down for the day,also made some comments in UserController.java" />
+    <MESSAGE value="Created getUserByID method in UserService" />
+    <MESSAGE value="Creating NotFoundException class" />
+    <MESSAGE value="Created getUserByID method, also changed ID back to an int" />
+    <MESSAGE value="Created get method within userController" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created get method within userController" />
   </component>
 </project>
