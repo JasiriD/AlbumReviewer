@@ -26,4 +26,9 @@ public class UserServiceImpl implements UserService{
         //returning savedUser back to client as a DTO
         return UserMapper.mapToUserDTO(savedUser);
     }
+
+    @Override
+    public UserDTO getUserByID(Long userID) {
+        return null;
+    }
 }
