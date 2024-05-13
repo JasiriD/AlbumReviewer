@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Created getUserByID method in UserService">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/exception/NotFoundException.java" afterDir="false" />
+    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Creating NotFoundException class">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715571661598</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Creating NotFoundException class">
+      <option name="closed" value="true" />
+      <created>1715572089544</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715572089544</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,6 +237,7 @@
     <MESSAGE value="Adding UserController class" />
     <MESSAGE value="First time sitting down for the day,also made some comments in UserController.java" />
     <MESSAGE value="Created getUserByID method in UserService" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created getUserByID method in UserService" />
+    <MESSAGE value="Creating NotFoundException class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating NotFoundException class" />
   </component>
 </project>
