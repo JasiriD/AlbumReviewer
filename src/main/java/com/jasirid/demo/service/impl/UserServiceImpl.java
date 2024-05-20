@@ -7,6 +7,7 @@ import com.jasirid.demo.mapper.UserMapper;
 import com.jasirid.demo.repository.UserRepository;
 import com.jasirid.demo.service.UserService;
 import lombok.AllArgsConstructor;
+import org.springframework.boot.context.config.ConfigDataResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -39,17 +40,46 @@ public class UserServiceImpl implements UserService{
         User user = userRepository.findById(userID)
                 //throwing exception if there is not a user with userID ID
                 .orElseThrow(() ->
-                        new NotFoundException("There is no user with the given id!"));
+                        new NotFoundException("There is no user with the id " + userID + "!"));
 
         //Converting findById's user object into an employee DTO to return proper data type for method
         return UserMapper.mapToUserDTO(user);
     }
 
+
+    @Override
+    public UserDTO updateUser(int userID, UserDTO updatedUser) {
+        //throwing exception if there is not a user with userID ID
+        User user = userRepository.findById(userID).orElseThrow(()
+                -> new NotFoundException("There is no user with the id " + userID + "!"));
+
+        //Setting new user objects parameters to given user DTO
+        user.setUserName(updatedUser.getUserName());
+        user.setFirstName(updatedUser.getFirstName());
+        user.setLastName(updatedUser.getLastName());
+        user.setEmail(updatedUser.getEmail());
+
+
+        User newUpdatedUser = userRepository.save(user);
+
+        //Returning updated user
+        return UserMapper.mapToUserDTO(newUpdatedUser);
+    }
+
+    @Override
+    public void deleteUser(int userID){
+        //throwing exception if there is not a user with userID ID
+        User user = userRepository.findById(userID).orElseThrow(()
+                -> new NotFoundException("There is no user with the id " + userID + "!"));
+
+        userRepository.deleteById(userID);
+      
     //getAllUsers method / gets all users
     @Override
     public List<UserDTO> getAllUsers() {
         List<User> users = userRepository.findAll();
         return users.stream().map((user) -> UserMapper.mapToUserDTO(user))
                 .collect(Collectors.toList());
+
     }
 }
