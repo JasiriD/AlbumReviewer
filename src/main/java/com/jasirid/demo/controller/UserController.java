@@ -70,7 +70,7 @@ public class UserController {
         return ResponseEntity.ok("Employee Deleted");
     }
   
-    //Get all employees REST API
+    //Get all Users REST API
 
     @GetMapping
     public ResponseEntity<List<UserDTO>> getAllUsers(){
