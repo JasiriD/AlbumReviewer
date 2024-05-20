@@ -2,6 +2,7 @@ import React from 'react'
 
 function ListUserCompontent() {
 
+    //Table with dummy data
     const testData = [
         {
             "id":1,
@@ -27,9 +28,10 @@ function ListUserCompontent() {
     ]
 
   return (
-    <div>
+    //Remember that className usually refers to bootstrap
+    <div className='container'>
         <h1>All Users</h1>
-        <table>
+        <table className='table table-striped table-bordered'>
             <thead>
                 <tr>
                     <th>First Name</th>
@@ -40,6 +42,7 @@ function ListUserCompontent() {
             </thead>
             <tbody>
                 {
+                    //Table that displays dummy data
                     testData.map(user =>
                         <tr key={user.id}>
                             <td>{user.id}</td>
