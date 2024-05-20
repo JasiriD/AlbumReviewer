@@ -15,4 +15,7 @@ public interface UserService {
 
     //Update user method
     UserDTO updateUser(int userID, UserDTO updatedUser);
+
+    //Delete user method
+    void deleteUser(int userID);
 }

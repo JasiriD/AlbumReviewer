@@ -61,4 +61,13 @@ public class UserServiceImpl implements UserService{
         //Returning updated user
         return UserMapper.mapToUserDTO(newUpdatedUser);
     }
+
+    @Override
+    public void deleteUser(int userID){
+        //throwing exception if there is not a user with userID ID
+        User user = userRepository.findById(userID).orElseThrow(()
+                -> new NotFoundException("There is no user with the id " + userID + "!"));
+
+        userRepository.deleteById(userID);
+    }
 }
