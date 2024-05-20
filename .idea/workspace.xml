@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Installed bootstrap for React App">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Setting up a table to display users">
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/ListUserCompontent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/ListUserCompontent.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716215438106</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Setting up a table to display users">
+      <option name="closed" value="true" />
+      <created>1716216216224</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1716216216224</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -304,6 +313,7 @@
     <MESSAGE value="Fixed getAllUsers (It was nested in deleteUser method)" />
     <MESSAGE value="created entire React app. Changed the default react app template a bit." />
     <MESSAGE value="Installed bootstrap for React App" />
-    <option name="LAST_COMMIT_MESSAGE" value="Installed bootstrap for React App" />
+    <MESSAGE value="Setting up a table to display users" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setting up a table to display users" />
   </component>
 </project>

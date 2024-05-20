@@ -27,7 +27,33 @@ function ListUserCompontent() {
     ]
 
   return (
-    <div>ListUserCompontent</div>
+    <div>
+        <h1>All Users</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {
+                    testData.map(user =>
+                        <tr key={user.id}>
+                            <td>{user.id}</td>
+                            <td>{user.firstName}</td>
+                            <td>{user.lastName}</td>
+                            <td>{user.userName}</td>
+                            <td>{user.email}</td>
+                        </tr>
+                    )
+                }
+            </tbody>
+        </table>
+
+    </div>
   )
 }
 
