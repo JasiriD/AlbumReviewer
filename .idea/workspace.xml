@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Created get method within userController" />
+    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Created get method within userController">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +77,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "android.gradle.sync.needed": "true",
-    "git-widget-placeholder": "addGetUserRestAPI",
+    "git-widget-placeholder": "addUpdateUser",
     "last_opened_file_path": "C:/Users/Jasiri/Documents/LaunchCode/LC IntelliJ/CodingEventsJavaAddBootstrap",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
