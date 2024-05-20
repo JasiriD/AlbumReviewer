@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Fixed getAllUsers (It was nested in deleteUser method)">
+    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="created entire React app. Changed the default react app template a bit.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716210832035</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="created entire React app. Changed the default react app template a bit.">
+      <option name="closed" value="true" />
+      <created>1716214816799</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1716214816799</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,6 +297,7 @@
     <MESSAGE value="Did lots of work adding updateUser method, in UserController, UserService and UserServiceImpl files" />
     <MESSAGE value="Finished up UserController" />
     <MESSAGE value="Fixed getAllUsers (It was nested in deleteUser method)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed getAllUsers (It was nested in deleteUser method)" />
+    <MESSAGE value="created entire React app. Changed the default react app template a bit." />
+    <option name="LAST_COMMIT_MESSAGE" value="created entire React app. Changed the default react app template a bit." />
   </component>
 </project>
