@@ -23,6 +23,7 @@ function ListUserCompontent() {
         <table className='table table-striped table-bordered'>
             <thead>
                 <tr>
+                    <th>ID</th>
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Username</th>
