@@ -50,8 +50,10 @@ public class UserController {
     //Once again passing id to method
     //Still not too sure about requestbody, but I had it in the earlier method so I put it here
     public ResponseEntity<UserDTO> updateUser(@PathVariable("id") int userID, @RequestBody UserDTO updatedUser){
-        UserDTO userDTO = userService.updateUser(userID, updatedUser);
 
+
+        UserDTO userDTO = userService.updateUser(userID, updatedUser);
+        return ResponseEntity.ok(userDTO)
 
     }
 
