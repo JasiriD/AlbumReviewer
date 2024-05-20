@@ -67,19 +67,20 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public void deleteUser(int userID){
+    public void deleteUser(int userID) {
         //throwing exception if there is not a user with userID ID
         User user = userRepository.findById(userID).orElseThrow(()
                 -> new NotFoundException("There is no user with the id " + userID + "!"));
 
         userRepository.deleteById(userID);
-      
+    }
+
     //getAllUsers method / gets all users
+
     @Override
     public List<UserDTO> getAllUsers() {
         List<User> users = userRepository.findAll();
         return users.stream().map((user) -> UserMapper.mapToUserDTO(user))
                 .collect(Collectors.toList());
-
     }
 }
