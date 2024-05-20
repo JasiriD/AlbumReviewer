@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Setting up a table to display users">
-      <change beforePath="$PROJECT_DIR$/podium-frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/App.jsx" afterDir="false" />
+    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="made table cute using CSS">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/ListUserCompontent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/ListUserCompontent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,7 +283,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716216216224</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="React app now displays a table with test users">
+      <option name="closed" value="true" />
+      <created>1716216631554</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1716216631554</updated>
+    </task>
+    <task id="LOCAL-00020" summary="made table cute using CSS">
+      <option name="closed" value="true" />
+      <created>1716217024078</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1716217024078</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -314,6 +334,8 @@
     <MESSAGE value="created entire React app. Changed the default react app template a bit." />
     <MESSAGE value="Installed bootstrap for React App" />
     <MESSAGE value="Setting up a table to display users" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting up a table to display users" />
+    <MESSAGE value="React app now displays a table with test users" />
+    <MESSAGE value="made table cute using CSS" />
+    <option name="LAST_COMMIT_MESSAGE" value="made table cute using CSS" />
   </component>
 </project>

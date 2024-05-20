@@ -1,31 +1,20 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
+import { listUsers } from '../services/UserService'
 
 function ListUserCompontent() {
 
-    //Table with dummy data
-    const testData = [
-        {
-            "id":1,
-            "firstName": "Jasiri",
-            "lastName": "Dickson",
-            "userName": "Jeezi",
-            "email": "Shingun121@gmail.com"
-        },
-        {
-            "id":1,
-            "firstName": "Jasiri2",
-            "lastName": "Dickson2",
-            "userName": "Jeezi2",
-            "email": "Shingun121@gmail.com2"
-        },
-        {
-            "id":3,
-            "firstName": "Jasiri3",
-            "lastName": "Dickson3",
-            "userName": "Jeezi3",
-            "email": "Shingun121@gmail.com3"
-        },
-    ]
+    //Table with REST data
+    const [users, setUsers] = useState([])
+
+    //Not exactly sure how this works, takes data from API and puts it into users variable
+    useEffect(()=> {
+        listUsers().then((response) => {
+            setUsers(response.data)
+        }).catch(error => {
+            console.error(error);
+        })
+
+    },[])
 
   return (
     //Remember that className usually refers to bootstrap
@@ -43,7 +32,7 @@ function ListUserCompontent() {
             <tbody>
                 {
                     //Table that displays dummy data
-                    testData.map(user =>
+                    users.map(user =>
                         <tr key={user.id}>
                             <td>{user.id}</td>
                             <td>{user.firstName}</td>
