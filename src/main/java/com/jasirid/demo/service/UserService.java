@@ -13,9 +13,13 @@ public interface UserService {
     //Get any user by ID method
     UserDTO getUserByID(int userID);
 
+
     //Update user method
     UserDTO updateUser(int userID, UserDTO updatedUser);
 
     //Delete user method
     void deleteUser(int userID);
+  
+    List<UserDTO> getAllUsers();
+
 }

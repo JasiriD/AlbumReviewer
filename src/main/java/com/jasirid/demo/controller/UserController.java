@@ -8,6 +8,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 
 //RestController annotation allows this class to handle HTTP requests
 @RestController
@@ -44,6 +46,7 @@ public class UserController {
         return ResponseEntity.ok(userDTO);
     }
 
+
     //Update User REST API
     //PutMapping tells spring that this is a put request
     @PutMapping("{id}")
@@ -66,5 +69,14 @@ public class UserController {
         userService.deleteUser(userID);
         return ResponseEntity.ok("Employee Deleted");
     }
+  
+    //Get all employees REST API
+
+    @GetMapping
+    public ResponseEntity<List<UserDTO>> getAllUsers(){
+        List<UserDTO> users = userService.getAllUsers();
+        return ResponseEntity.ok(users);
+    }
+
 
 }

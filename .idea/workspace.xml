@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Finished up UserController">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +43,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="addingSpringBootOutput" />
+        <entry key="$PROJECT_DIR$" value="testBranch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,7 +79,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "android.gradle.sync.needed": "true",
+
     "git-widget-placeholder": "addUpdateUser",
+
     "last_opened_file_path": "C:/Users/Jasiri/Documents/LaunchCode/LC IntelliJ/CodingEventsJavaAddBootstrap",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
@@ -230,6 +234,7 @@
       <option name="project" value="LOCAL" />
       <updated>1715573241170</updated>
     </task>
+
     <task id="LOCAL-00013" summary="Did lots of work adding updateUser method, in UserController, UserService and UserServiceImpl files">
       <option name="closed" value="true" />
       <created>1716209201055</created>
@@ -245,6 +250,7 @@
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1716209442345</updated>
+      
     </task>
     <option name="localTasksCounter" value="15" />
     <servers />
@@ -275,8 +281,10 @@
     <MESSAGE value="Creating NotFoundException class" />
     <MESSAGE value="Created getUserByID method, also changed ID back to an int" />
     <MESSAGE value="Created get method within userController" />
+
     <MESSAGE value="Did lots of work adding updateUser method, in UserController, UserService and UserServiceImpl files" />
     <MESSAGE value="Finished up UserController" />
     <option name="LAST_COMMIT_MESSAGE" value="Finished up UserController" />
+
   </component>
 </project>
