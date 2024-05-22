@@ -6,15 +6,25 @@ import Dude from './dude'
 import ListUserCompontent from './components/ListUserCompontent'
 import HeaderComponent from './components/HeaderComponent'
 import FooterComponent from './components/FooterComponent'
+//Importing BrowserRouter from react-router-dom library
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
+  //Main app. Put components here
   return (
     <>
-      <HeaderComponent />
-      <ListUserCompontent />
-      <FooterComponent />
+      <BrowserRouter >
+        <HeaderComponent />
+          <Routes>
+            {/* //Localhost:3030 */}
+            <Route path="/"></Route>
+            {/* //Localhost:3030/Users */}
+            <Route path="/Users" element = {<ListUserCompontent />}></Route>
+          </Routes>
+        <FooterComponent />
+      </ BrowserRouter>  
     </>
   )
 }

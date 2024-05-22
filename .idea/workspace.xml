@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Fixed it. React app now displays a table of users from SQL database">
+    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Added header and footer to React app">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/podium-frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/App.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -303,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716223484599</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added header and footer to React app">
+      <option name="closed" value="true" />
+      <created>1716411353750</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1716411353750</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -341,6 +351,7 @@
     <MESSAGE value="React app now displays a table with test users" />
     <MESSAGE value="made table cute using CSS" />
     <MESSAGE value="Fixed it. React app now displays a table of users from SQL database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed it. React app now displays a table of users from SQL database" />
+    <MESSAGE value="Added header and footer to React app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added header and footer to React app" />
   </component>
 </project>
