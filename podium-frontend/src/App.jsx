@@ -8,6 +8,7 @@ import HeaderComponent from './components/HeaderComponent'
 import FooterComponent from './components/FooterComponent'
 //Importing BrowserRouter from react-router-dom library
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { UserComponent } from './components/UserComponent'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,10 +19,12 @@ function App() {
       <BrowserRouter >
         <HeaderComponent />
           <Routes>
-            {/* //Localhost:3030 */}
+            {/*Localhost:3030 */}
             <Route path="/"></Route>
-            {/* //Localhost:3030/Users */}
+            {/*Localhost:3030/Users */}
             <Route path="/Users" element = {<ListUserCompontent />}></Route>
+            {/* Localhost:3030/addUser */}
+            <Route path = "/addUser" element = {<UserComponent />}></Route>
           </Routes>
         <FooterComponent />
       </ BrowserRouter>  

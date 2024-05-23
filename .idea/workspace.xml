@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Added header and footer to React app">
+    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Configured Routing in react app">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/podium-frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/HeaderComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/HeaderComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/ListUserCompontent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/ListUserCompontent.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716411353750</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Configured Routing in react app">
+      <option name="closed" value="true" />
+      <created>1716412891530</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1716412891530</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -352,6 +360,7 @@
     <MESSAGE value="made table cute using CSS" />
     <MESSAGE value="Fixed it. React app now displays a table of users from SQL database" />
     <MESSAGE value="Added header and footer to React app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added header and footer to React app" />
+    <MESSAGE value="Configured Routing in react app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configured Routing in react app" />
   </component>
 </project>

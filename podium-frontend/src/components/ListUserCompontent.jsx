@@ -1,10 +1,15 @@
 import React, {useEffect, useState} from 'react'
 import { listUsers } from '../services/UserService'
+//Importing useNavigate hook. This allows us to change pages with buttons
+import { useNavigate } from 'react-router-dom'
 
 function ListUserCompontent() {
 
-    //Table with REST data
+    //Creating users object with REST data
     const [users, setUsers] = useState([])
+
+    //Setting const function to useNavigate because you can't use it directly
+    const navigate = useNavigate();
 
     //Not exactly sure how this works, takes data from API and puts it into users variable
     useEffect(()=> {
@@ -16,13 +21,21 @@ function ListUserCompontent() {
 
     },[])
 
+    function addUser(){
+        //addUser function transports you to addUser url
+        navigate('/adduser')
+    }
+
   return (
-    //Remember that className usually refers to bootstrap
+    //Remember that className usually refers to bootstrap classes
     <div className='container'>
-        <h1>All Users</h1>
+        <h1 className='text-center'>All Users</h1>
+        {/*Button that calls addUser funcion on click, navigating you to addUser page*/}
+        <button type="button" class="btn btn-primary" onClick={addUser}>Make Account</button>
         <table className='table table-striped table-bordered'>
             <thead>
                 <tr>
+                    {/*table header*/}
                     <th>ID</th>
                     <th>First Name</th>
                     <th>Last Name</th>
@@ -32,7 +45,7 @@ function ListUserCompontent() {
             </thead>
             <tbody>
                 {
-                    //Table that displays dummy data
+                    //Table that displays user data
                     users.map(user =>
                         <tr key={user.id}>
                             <td>{user.id}</td>
