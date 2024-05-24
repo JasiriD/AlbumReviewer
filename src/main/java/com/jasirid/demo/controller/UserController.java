@@ -12,6 +12,8 @@ import java.util.List;
 
 
 //RestController annotation allows this class to handle HTTP requests
+//CrossOrgin allows react application/client to call user rest APIS
+@CrossOrigin("*")
 @RestController
 //Base url for rest APIs that are built within this controller
 @AllArgsConstructor
@@ -33,7 +35,10 @@ public class UserController {
         return new ResponseEntity<>(savedUser, HttpStatus.CREATED);
     }
 
+    //---------------------------------------------------------------------------------------------------------
+
     //Get User REST API
+
     //GetMapping annotation tells spring that this is a get request
     @GetMapping("{id}")
     //passing ID to method
@@ -46,8 +51,20 @@ public class UserController {
         return ResponseEntity.ok(userDTO);
     }
 
+    //---------------------------------------------------------------------------------------------------------
+
+    //Get all Users REST API
+
+    @GetMapping
+    public ResponseEntity<List<UserDTO>> getAllUsers(){
+        List<UserDTO> users = userService.getAllUsers();
+        return ResponseEntity.ok(users);
+    }
+
+    //---------------------------------------------------------------------------------------------------------
 
     //Update User REST API
+
     //PutMapping tells spring that this is a put request
     @PutMapping("{id}")
     //Once again passing id to method
@@ -61,21 +78,13 @@ public class UserController {
 
     }
 
-
+    //---------------------------------------------------------------------------------------------------------
 
     //Delete User REST API
     @DeleteMapping("{id}")
     public ResponseEntity<String> deleteEmployee(@PathVariable("id") int userID){
         userService.deleteUser(userID);
         return ResponseEntity.ok("Employee Deleted");
-    }
-  
-    //Get all Users REST API
-
-    @GetMapping
-    public ResponseEntity<List<UserDTO>> getAllUsers(){
-        List<UserDTO> users = userService.getAllUsers();
-        return ResponseEntity.ok(users);
     }
 
 

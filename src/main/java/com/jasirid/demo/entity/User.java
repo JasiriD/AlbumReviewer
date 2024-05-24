@@ -21,7 +21,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "users")
 //User class within entity package
-public class    User {
+public class User {
 
     //Fields
     //These annotations tell the database to automatically increment the primary entity (the id)
