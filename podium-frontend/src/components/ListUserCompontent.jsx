@@ -27,12 +27,14 @@ function ListUserCompontent() {
         navigate('/adduser')
     }
 
+    function updateUser(id){
+        navigate(`/updateUser/${id}`)
+    }
+
   return (
     //Remember that className usually refers to bootstrap classes
     <div className='container'>
         <h1 className='text-center'>All Users</h1>
-        {/*Button that calls addUser funcion on click, navigating you to addUser page*/}
-        <button type="button" className="btn btn-primary" onClick={addUser}>Make Account</button>
         <table className='table table-striped table-bordered'>
             <thead>
                 <tr>
@@ -42,6 +44,7 @@ function ListUserCompontent() {
                     <th>Last Name</th>
                     <th>Username</th>
                     <th>Email</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -54,12 +57,20 @@ function ListUserCompontent() {
                             <td>{user.lastName}</td>
                             <td>{user.userName}</td>
                             <td>{user.email}</td>
+                            <td>
+                                {/* Button to edit a selected user. For some reason I have to use an arrow function here */}
+                                <button className='btn btn-primary' onClick={() => updateUser(user.id)}>Update</button>
+                            </td>
                         </tr>
                     )
                 }
             </tbody>
         </table>
-
+        
+        {/*Button that calls addUser funcion on click, navigating you to addUser page*/}
+        <div className='text-center'>
+            <button type="button" className="btn btn-success" onClick={addUser}>Create Account</button>
+        </div>
     </div>
   )
 }
