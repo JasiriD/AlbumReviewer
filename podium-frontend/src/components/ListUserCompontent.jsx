@@ -5,15 +5,16 @@ import { useNavigate } from 'react-router-dom'
 
 function ListUserCompontent() {
 
-    //Creating users object with REST data
+    //Creating useState for users
     const [users, setUsers] = useState([])
 
-    //Setting const function to useNavigate because you can't use it directly
+    //Setting const function to useNavigate because you can't use it directly (HAS TO BE INSIDE INITIAL FUNCTION (WITH BRACKETS AT END!!!!) ! ! ! ! !)
     const navigate = useNavigate();
 
     //Not exactly sure how this works, takes data from API and puts it into users variable
     useEffect(()=> {
         listUsers().then((response) => {
+            //calling useState function to apply the response data from our get request to users object
             setUsers(response.data)
         }).catch(error => {
             console.error(error);
@@ -31,7 +32,7 @@ function ListUserCompontent() {
     <div className='container'>
         <h1 className='text-center'>All Users</h1>
         {/*Button that calls addUser funcion on click, navigating you to addUser page*/}
-        <button type="button" class="btn btn-primary" onClick={addUser}>Make Account</button>
+        <button type="button" className="btn btn-primary" onClick={addUser}>Make Account</button>
         <table className='table table-striped table-bordered'>
             <thead>
                 <tr>

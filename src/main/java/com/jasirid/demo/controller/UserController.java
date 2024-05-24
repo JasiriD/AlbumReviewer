@@ -35,7 +35,10 @@ public class UserController {
         return new ResponseEntity<>(savedUser, HttpStatus.CREATED);
     }
 
+    //---------------------------------------------------------------------------------------------------------
+
     //Get User REST API
+
     //GetMapping annotation tells spring that this is a get request
     @GetMapping("{id}")
     //passing ID to method
@@ -48,6 +51,8 @@ public class UserController {
         return ResponseEntity.ok(userDTO);
     }
 
+    //---------------------------------------------------------------------------------------------------------
+
     //Get all Users REST API
 
     @GetMapping
@@ -56,9 +61,10 @@ public class UserController {
         return ResponseEntity.ok(users);
     }
 
-
+    //---------------------------------------------------------------------------------------------------------
 
     //Update User REST API
+
     //PutMapping tells spring that this is a put request
     @PutMapping("{id}")
     //Once again passing id to method
@@ -72,7 +78,7 @@ public class UserController {
 
     }
 
-
+    //---------------------------------------------------------------------------------------------------------
 
     //Delete User REST API
     @DeleteMapping("{id}")

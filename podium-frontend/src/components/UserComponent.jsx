@@ -1,18 +1,19 @@
 import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
+import { addUser } from '../services/UserService';
 
-
-const navigate = useNavigate;
-
-// function goBack(){
-//     navigate('/users')
-// }
 
 export const UserComponent = () => {
 
+    const navigate = useNavigate();
+
+    function goBack(){
+        navigate('/users');
+    }
+
     const[firstName, setFirstName] = useState('');
     const[lastName, setLastName] = useState('');
-    const[username, setUsername] = useState('');
+    const[userName, setuserName] = useState('');
     const[email, setEmail] = useState('');
 
     function handleFirstName(event){
@@ -21,17 +22,17 @@ export const UserComponent = () => {
     }
 
     function handleLastName(event){
-        //Gets value from form and applies it to firstName useState variable
+        //Gets value from form and applies it to lastName useState variable
         setLastName(event.target.value);
     }
 
-    function handleUsername(event){
-        //Gets value from form and applies it to firstName useState variable
-        setUsername(event.target.value);
+    function handleuserName(event){
+        //Gets value from form and applies it to userName useState variable
+        setuserName(event.target.value);
     }
 
     function handleEmail(event){
-        //Gets value from form and applies it to firstName useState variable
+        //Gets value from form and applies it to email useState variable
         setEmail(event.target.value);
     }
 
@@ -40,9 +41,17 @@ export const UserComponent = () => {
         event.preventDefault();
         
         //Applies fields from form to user object
-        const user = {firstName, lastName, username, email};
-        //Prints user object to console (For testing purposes)
+        const user = {firstName, lastName, userName, email};
+
+        // //Prints user object to console (For testing purposes)
         console.log(user);
+
+        //addUser function that is passed user object (from userService)
+        addUser(user).then((response) =>{
+            console.log(response.data);
+            //returns user to list of users page
+            navigate('/users')
+        })
     }
 
   return (
@@ -85,17 +94,17 @@ export const UserComponent = () => {
                             </input>
                         </div>
                         
-                        {/* Field for username */}
+                        {/* Field for userName */}
                         <div className='form-group mb-2'>
-                            <label className='form-label'>Username:</label>
+                            <label className='form-label'>userName:</label>
                             <input 
                                 type='text'
-                                placeholder='Username'
-                                name='firstName'
+                                placeholder='userName'
+                                name='userName'
                                 // passing useState firstName variable from line 13 to value
-                                value={username}
+                                value={userName}
                                 className='form-control'
-                                onChange={handleUsername}>
+                                onChange={handleuserName}>
 
                             </input>
                         </div>
@@ -114,11 +123,12 @@ export const UserComponent = () => {
 
                             </input>
                         </div>
-                        {/* submit button */}
+
+                        {/* submit button & back button*/}
                         <br/>
                         <div className='text-center'>
                             <button className='btn btn-success' onClick={saveUser}>Submit</button>
-                            <button className='btn btn-secondary'>Back</button>
+                            <button className='btn btn-secondary' onClick={goBack}>Back</button>
                         </div>
                         <br/>
                     </form>
