@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import { useNavigate } from 'react-router-dom'
-import { addUser } from '../services/UserService';
+import { addUser, getUserByID, updateUser } from '../services/UserService';
 //useParams allows us to write conditionals based on current URL
 import { useParams } from 'react-router-dom';
 
@@ -9,8 +9,10 @@ export const UserComponent = () => {
 
     const navigate = useNavigate();
 
+    //Gets id from URL
     const{id} = useParams();
 
+    //goBack function that returns you to view all users screen
     function goBack(){
         navigate('/users');
     }
@@ -19,6 +21,23 @@ export const UserComponent = () => {
     const[lastName, setLastName] = useState('');
     const[userName, setuserName] = useState('');
     const[email, setEmail] = useState('');
+
+    useEffect(() =>{ 
+
+        //If url contains an ID, then execute this function
+        if(id){
+            getUserByID(id).then((response) => {
+                //Takes response from getUserByID and puts it into fields using useState functions
+                setFirstName(response.data.firstName);
+                setLastName(response.data.lastName);
+                setuserName(response.data.userName);
+                setEmail(response.data.email);
+            }).catch(error => {
+                console.error(error);
+            })
+        }
+
+    }, [id]);
 
     //Creating useState for errors (When the new user doesn't have proper variables in the form)
     //Each field here will contain errors pertaining to their cooresponding user field
@@ -60,12 +79,27 @@ export const UserComponent = () => {
             // //Prints user object to console (For testing purposes)
             console.log(user);
 
-            //addUser function that is passed user object (from userService)
-            addUser(user).then((response) =>{
-                console.log(response.data);
-                //returns user to list of users page
-                navigate('/users')
-            })
+            
+            //If statement that checks if you're updating an existing user or creating a new one
+            //If there is an id in the URL, run updateUser
+            //.catch error statements are there to throw errors if any field is empty/incorrect
+            if(id){
+                updateUser(id, user).then((response) =>{
+                    console.log(response.data);
+                    //returns user to list of users page
+                    navigate('/users')
+                }).catch(error => {
+                    console.error(error);
+                })
+            }else{
+                //addUser function that is passed user object (from userService)
+                addUser(user).then((response) =>{
+                    console.log(response.data);
+                    navigate('/users')
+                }).catch(error => {
+                    console.error(error);
+                })
+            }
         }
     }
 
@@ -204,8 +238,8 @@ export const UserComponent = () => {
 
                         {/* submit button & back button*/}
                         <br/>
-                        <div className='text-center'>
-                            <button className='btn btn-success' onClick={saveUser}>Submit</button>
+                        <div className='text-center' id="submitButtons">
+                            <button className='btn btn-success' onClick={saveUser}>Submit</button>                             
                             <button className='btn btn-secondary' onClick={goBack}>Back</button>
                         </div>
                         <br/>
@@ -214,4 +248,4 @@ export const UserComponent = () => {
         </div>
     </div>
   )
-}
+};

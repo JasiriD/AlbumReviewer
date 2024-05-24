@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { listUsers } from '../services/UserService'
+import { deleteUser, listUsers } from '../services/UserService'
 //Importing useNavigate hook. This allows us to change pages with buttons
 import { useNavigate } from 'react-router-dom'
 
@@ -10,16 +10,20 @@ function ListUserCompontent() {
 
     //Setting const function to useNavigate because you can't use it directly (HAS TO BE INSIDE INITIAL FUNCTION (WITH BRACKETS AT END!!!!) ! ! ! ! !)
     const navigate = useNavigate();
-
+    
     //Not exactly sure how this works, takes data from API and puts it into users variable
-    useEffect(()=> {
+    function getAllUsers(){
         listUsers().then((response) => {
             //calling useState function to apply the response data from our get request to users object
             setUsers(response.data)
         }).catch(error => {
             console.error(error);
         })
+    }
 
+    //Calls above function
+    useEffect(()=> {
+        getAllUsers();
     },[])
 
     function addUser(){
@@ -29,6 +33,17 @@ function ListUserCompontent() {
 
     function updateUser(id){
         navigate(`/updateUser/${id}`)
+    }
+
+    function removeUser(id){
+        console.log(id);
+
+        deleteUser(id).then((response) =>{
+            //Calls getAllUsers funtion after deletion to reload the list of users
+            getAllUsers();
+        }).catch.error(error => {
+            console.error(error);
+        });
     }
 
   return (
@@ -60,6 +75,8 @@ function ListUserCompontent() {
                             <td>
                                 {/* Button to edit a selected user. For some reason I have to use an arrow function here */}
                                 <button className='btn btn-primary' onClick={() => updateUser(user.id)}>Update</button>
+                                {/* Button to edit a selected user. For some reason I have to use an arrow function here */}
+                                <button className='btn btn-danger' onClick={() => removeUser(user.id)}>Delete</button>
                             </td>
                         </tr>
                     )
