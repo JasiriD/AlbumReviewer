@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @AllArgsConstructor
-public class LoginServicImpl {
+public class LoginServiceImpl {
     public boolean validateUser(String username, String password){
         return username.equals("Jeezi") && password.equals("Izeej");
     }

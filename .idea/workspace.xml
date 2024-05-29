@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="LoginComponent now has the proper layout within react">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/LoginServicImpl.java" afterDir="false" />
+    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Created LoginService and LoginServicImpl files, coded an example validation within LoginServicImpl">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/LoginServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/LoginComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/LoginComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/LoginServicImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -360,7 +362,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716998136844</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Created LoginService and LoginServicImpl files, coded an example validation within LoginServicImpl">
+      <option name="closed" value="true" />
+      <created>1716998369158</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1716998369158</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -375,7 +385,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Creating new packages" />
     <MESSAGE value="Finishing up user JPA entity" />
     <MESSAGE value="Creating UserService interface as well as UserServiceImpl class" />
     <MESSAGE value="Adding UserController class" />
@@ -400,6 +409,7 @@
     <MESSAGE value="Created update users page within UserComponent.jsx. Currently non functional." />
     <MESSAGE value="Created initial LoginComponent component" />
     <MESSAGE value="LoginComponent now has the proper layout within react" />
-    <option name="LAST_COMMIT_MESSAGE" value="LoginComponent now has the proper layout within react" />
+    <MESSAGE value="Created LoginService and LoginServicImpl files, coded an example validation within LoginServicImpl" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created LoginService and LoginServicImpl files, coded an example validation within LoginServicImpl" />
   </component>
 </project>
