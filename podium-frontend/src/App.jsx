@@ -10,6 +10,7 @@ import FooterComponent from './components/FooterComponent'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { UserComponent } from './components/UserComponent'
 import { useNavigate } from 'react-router-dom'
+import LoginComponent from './components/LoginComponent'
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
     <>
       <BrowserRouter >
         <HeaderComponent />
+          {/*Routes allows us to route pages to different React components. */}
           <Routes>
             {/*Localhost:3000 */}
             <Route path="/"></Route>
@@ -27,6 +29,8 @@ function App() {
             <Route path = "/adduser" element = {<UserComponent />}></Route>
             {/* Localhost:3000/updateUser/id */}
             <Route path = "/updateUser/:id" element = {<UserComponent/>}></Route>
+            {/* Localhost:3000/Login */}
+            <Route path = "/login" element = {<LoginComponent/>}></Route>
           </Routes>
         <FooterComponent />
       </ BrowserRouter>  

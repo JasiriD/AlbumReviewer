@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Created update users page within UserComponent.jsx. Currently non functional.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium-frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/ListUserCompontent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/ListUserCompontent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/UserComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/UserComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium-frontend/src/services/UserService.js" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/services/UserService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/App.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,17 +69,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;creatingReactApp&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Jasiri/Documents/LaunchCode/LC IntelliJ/CodingEventsJavaAddBootstrap&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "android.gradle.sync.needed": "true",
+    "git-widget-placeholder": "creatingLoginForm",
+    "last_opened_file_path": "C:/Users/Jasiri/Documents/LaunchCode/LC IntelliJ/CodingEventsJavaAddBootstrap",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Gradle.AlbumReviewer [bootRun]">
     <configuration name="PodiumApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jasirid.demo.PodiumApplication" />
