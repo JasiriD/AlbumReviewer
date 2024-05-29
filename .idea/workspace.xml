@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Created update users page within UserComponent.jsx. Currently non functional.">
+    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Created initial LoginComponent component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium-frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/LoginComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/LoginComponent.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,7 +343,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716516812624</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Created initial LoginComponent component">
+      <option name="closed" value="true" />
+      <created>1716996477352</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1716996477352</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -358,7 +366,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Merge pull request #2 from JasiriD/configureMySQLDatabase&#10;&#10;Added compatibility with MySQL database" />
     <MESSAGE value="Crea" />
     <MESSAGE value="Creating new packages" />
     <MESSAGE value="Finishing up user JPA entity" />
@@ -383,6 +390,7 @@
     <MESSAGE value="Added an account creation page to react app. this page is within UserComponent.jsx." />
     <MESSAGE value="Added ability to add users to database through React app." />
     <MESSAGE value="Created update users page within UserComponent.jsx. Currently non functional." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created update users page within UserComponent.jsx. Currently non functional." />
+    <MESSAGE value="Created initial LoginComponent component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created initial LoginComponent component" />
   </component>
 </project>
