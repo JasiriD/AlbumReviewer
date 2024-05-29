@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Created initial LoginComponent component">
+    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="LoginComponent now has the proper layout within react">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/LoginServicImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/LoginComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/LoginComponent.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -351,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716996477352</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="LoginComponent now has the proper layout within react">
+      <option name="closed" value="true" />
+      <created>1716998136844</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1716998136844</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -366,7 +375,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Crea" />
     <MESSAGE value="Creating new packages" />
     <MESSAGE value="Finishing up user JPA entity" />
     <MESSAGE value="Creating UserService interface as well as UserServiceImpl class" />
@@ -391,6 +399,7 @@
     <MESSAGE value="Added ability to add users to database through React app." />
     <MESSAGE value="Created update users page within UserComponent.jsx. Currently non functional." />
     <MESSAGE value="Created initial LoginComponent component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created initial LoginComponent component" />
+    <MESSAGE value="LoginComponent now has the proper layout within react" />
+    <option name="LAST_COMMIT_MESSAGE" value="LoginComponent now has the proper layout within react" />
   </component>
 </project>
