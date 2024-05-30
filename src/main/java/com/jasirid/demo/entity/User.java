@@ -9,7 +9,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-
+import java.util.List;
 
 
 //Annotations to tell Lombok to generate Getters, Settters, etc
@@ -40,12 +40,16 @@ public class User {
     @Column(name = "username", nullable = false, unique = true)
     private String userName;
 
-    //Same as username
+    //Same as username/username can be empty as it's not used in the project
     @Column(name = "email", unique = true)
     private String email;
 
     @Column(name = "password", nullable = false)
     private String password;
+
+    @Column(name= "reviews")
+    @OneToMany(fetch = FetchType.LAZY,mappedBy = "user")
+    private List<Review> reviews;
 
 
 

@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Making progress on login form as well as laying groundwork for user system">
+    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Did alot of stuff. Login form now works properly and recognizes user, project shifted into a single page concept, and progress made on main website page.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/dto/ReviewDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/Review.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium-frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium-frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/HeaderComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/HeaderComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/ListUserCompontent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/ListUserCompontent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/LoginComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/LoginComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/UserComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/UserComponent.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/dto/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/LoginService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/LoginServiceImpl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -383,7 +382,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717005447049</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Did alot of stuff. Login form now works properly and recognizes user, project shifted into a single page concept, and progress made on main website page.">
+      <option name="closed" value="true" />
+      <created>1717071651875</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1717071651875</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -398,7 +405,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Creating UserService interface as well as UserServiceImpl class" />
     <MESSAGE value="Adding UserController class" />
     <MESSAGE value="First time sitting down for the day,also made some comments in UserController.java" />
     <MESSAGE value="Created getUserByID method in UserService" />
@@ -423,6 +429,7 @@
     <MESSAGE value="LoginComponent now has the proper layout within react" />
     <MESSAGE value="Created LoginService and LoginServicImpl files, coded an example validation within LoginServicImpl" />
     <MESSAGE value="Making progress on login form as well as laying groundwork for user system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Making progress on login form as well as laying groundwork for user system" />
+    <MESSAGE value="Did alot of stuff. Login form now works properly and recognizes user, project shifted into a single page concept, and progress made on main website page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Did alot of stuff. Login form now works properly and recognizes user, project shifted into a single page concept, and progress made on main website page." />
   </component>
 </project>
