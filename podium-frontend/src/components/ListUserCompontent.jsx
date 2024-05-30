@@ -32,7 +32,13 @@ function ListUserCompontent() {
     }
 
     function updateUser(id){
+        //navigates you to updateuser page
         navigate(`/updateUser/${id}`)
+    }
+
+    function login(){
+        //navigates you to login page
+        navigate(`/login`)
     }
 
     function removeUser(id){
@@ -74,8 +80,8 @@ function ListUserCompontent() {
                             <td>{user.email}</td>
                             <td>
                                 {/* Button to edit a selected user. For some reason I have to use an arrow function here */}
-                                <button className='btn btn-primary' onClick={() => updateUser(user.id)}>Update</button>
-                                {/* Button to edit a selected user. For some reason I have to use an arrow function here */}
+                                <button className='btn btn-primary me-1' onClick={() => updateUser(user.id)}>Update</button>
+                                {/* Button to remove a selected user. For some reason I have to use an arrow function here */}
                                 <button className='btn btn-danger' onClick={() => removeUser(user.id)}>Delete</button>
                             </td>
                         </tr>
@@ -86,8 +92,10 @@ function ListUserCompontent() {
         
         {/*Button that calls addUser funcion on click, navigating you to addUser page*/}
         <div className='text-center'>
-            <button type="button" className="btn btn-success" onClick={addUser}>Create Account</button>
+            <button type="button" className="btn btn-success me-2" onClick={addUser}>Create Account</button>
+            <button type="button" className="btn btn-success" onClick={login}>Login</button>
         </div>
+
     </div>
   )
 }

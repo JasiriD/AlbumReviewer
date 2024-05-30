@@ -41,8 +41,11 @@ public class User {
     private String userName;
 
     //Same as username
-    @Column(name = "email", nullable = false, unique = true)
+    @Column(name = "email", unique = true)
     private String email;
+
+    @Column(name = "password", nullable = false)
+    private String password;
 
 
 

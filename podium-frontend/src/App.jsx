@@ -11,8 +11,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { UserComponent } from './components/UserComponent'
 import { useNavigate } from 'react-router-dom'
 import LoginComponent from './components/LoginComponent'
+import HomePageComponent from './components/HomePageComponent'
 
 function App() {
+
+
   
   //Main app. Put components here
   return (
@@ -29,8 +32,10 @@ function App() {
             <Route path = "/adduser" element = {<UserComponent />}></Route>
             {/* Localhost:3000/updateUser/id */}
             <Route path = "/updateUser/:id" element = {<UserComponent/>}></Route>
-            {/* Localhost:3000/Login */}
+            {/* Localhost:3000/login */}
             <Route path = "/login" element = {<LoginComponent/>}></Route>
+            {/* Localhost:3000/home */}
+            <Route path = "/home" element = {<HomePageComponent data={"Guys"}/>}></Route>
           </Routes>
         <FooterComponent />
       </ BrowserRouter>  
