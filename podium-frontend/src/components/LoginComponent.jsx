@@ -1,7 +1,7 @@
 //rafce is the command to create a simple baseline react component
 import React, {useEffect, useState} from 'react'
 import { useNavigate } from 'react-router'
-import { listUsers, getUserByID } from '../services/UserService'
+import { listUsers,  } from '../services/UserService'
 
 const LoginComponent = ({ sendDataToParent }) => {
 
@@ -84,19 +84,21 @@ const LoginComponent = ({ sendDataToParent }) => {
         //Loops through users objects
         for(let user in users){
 
-            console.log("test");
+            /* console.log("test"); */
 
             //If validation checking if username isnt correct
             if((users[user].userName) != test.userName || (users[user].password) != test.password){
                 //setting errors to reflect if username or password are invalid
                 errorsCopy.userName = 'Username or password incorrect.';
                 errorsCopy.password = 'Username or password incorrect.';
-                console.log(users[user].userName + " " + users[user].password);
+                /* console.log(users[user].userName + " " + users[user].password); */
             //if username is correct, do this
             }else{
-                console.log("Yay!");
-                console.log(users[user].id);
+                /* console.log("Yay!");
+                console.log(users[user].id); */
                 /* navigate("/users"); */
+
+                //Sending user ID to homepage component
                 sendDataToParent(users[user].id);
                 return(users[user].id);
             }
@@ -133,6 +135,7 @@ const LoginComponent = ({ sendDataToParent }) => {
                             placeholder="Enter username" 
                             name='userName' 
                             className={`form-control ${errors.userName ? 'is-invalid': ''}`}
+                            //Changes userName in useState variable immediately something is typed in form
                             onChange={handleuserName}></input>
 
                         {/* Displays validation error message under input text box */}
@@ -155,7 +158,7 @@ const LoginComponent = ({ sendDataToParent }) => {
             </div>
             <br/>
             <div className='text-center'>
-                <button className='btn btn-danger' onClick={checkUsers}>Login</button>
+                <button className='btn btn-primary' onClick={checkUsers}>Login</button>
             </div>
             <br/>
         </div>

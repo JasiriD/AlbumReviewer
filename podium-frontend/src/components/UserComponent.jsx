@@ -81,8 +81,12 @@ export const UserComponent = () => {
         event.preventDefault();
         //Checks if validateForm returns true
         if(validateForm()){
+
+            //Create empty reviews array
+            let reviews = [];
+
             //Applies fields from form to user object
-            const user = {firstName, lastName, userName, email, password};
+            const user = {firstName, lastName, userName, email, password, reviews};
 
             // //Prints user object to console (For testing purposes)
             console.log(user);
@@ -110,6 +114,7 @@ export const UserComponent = () => {
             }
         }
     }
+
 
     //Validate form function
     function validateForm(){
@@ -147,6 +152,13 @@ export const UserComponent = () => {
             errorsCopy.password = '';
         }else {
             errorsCopy.password = 'A password is required.';
+            valid = false;
+        }
+
+        if(email.trim() != ''){
+            errorsCopy.email = '';
+        }else {
+            errorsCopy.email = 'An email is required.';
             valid = false;
         }
 

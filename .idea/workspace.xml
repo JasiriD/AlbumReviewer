@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="still working on mapping many to one relationship with reviews and users. I think im about done and simply need to finish up the CRUD operations on review object">
+    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Did alot, most notably tou can now delete reviews using react app. Reviews are visible in app. A from to write new reviews is currently being added.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/HeaderComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/HeaderComponent.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/HomePageComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/HomePageComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/ReviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/dto/ReviewDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/dto/ReviewDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/mapper/ReviewMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/mapper/ReviewMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/ReviewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/ReviewServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/ListUserCompontent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/ListUserCompontent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/LoginComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/LoginComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/ReviewComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/ReviewComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/UserComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/UserComponent.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +45,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="addingGetAllEmployees" />
+        <entry key="$PROJECT_DIR$" value="creatingLoginForm" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,7 +81,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "android.gradle.sync.needed": "true",
-    "git-widget-placeholder": "creatingLoginForm",
+    "git-widget-placeholder": "enablingUserReviewWritingReading",
     "last_opened_file_path": "C:/Users/Jasiri/Documents/LaunchCode/LC IntelliJ/CodingEventsJavaAddBootstrap",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
@@ -407,7 +405,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717159312085</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Did alot, most notably tou can now delete reviews using react app. Reviews are visible in app. A from to write new reviews is currently being added.">
+      <option name="closed" value="true" />
+      <created>1717181481266</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1717181481266</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -422,7 +428,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created getUserByID method in UserService" />
     <MESSAGE value="Creating NotFoundException class" />
     <MESSAGE value="Created getUserByID method, also changed ID back to an int" />
     <MESSAGE value="Created get method within userController" />
@@ -447,6 +452,7 @@
     <MESSAGE value="Did alot of stuff. Login form now works properly and recognizes user, project shifted into a single page concept, and progress made on main website page." />
     <MESSAGE value="More progress made on main website page, now working on reviews entity in a many to one relationship with users entity" />
     <MESSAGE value="still working on mapping many to one relationship with reviews and users. I think im about done and simply need to finish up the CRUD operations on review object" />
-    <option name="LAST_COMMIT_MESSAGE" value="still working on mapping many to one relationship with reviews and users. I think im about done and simply need to finish up the CRUD operations on review object" />
+    <MESSAGE value="Did alot, most notably tou can now delete reviews using react app. Reviews are visible in app. A from to write new reviews is currently being added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Did alot, most notably tou can now delete reviews using react app. Reviews are visible in app. A from to write new reviews is currently being added." />
   </component>
 </project>
