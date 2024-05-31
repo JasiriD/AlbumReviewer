@@ -19,7 +19,8 @@ public interface UserService {
 
     //Delete user method
     void deleteUser(int userID);
-  
+
+    //get all users method
     List<UserDTO> getAllUsers();
 
 }

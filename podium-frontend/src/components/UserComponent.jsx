@@ -21,6 +21,7 @@ export const UserComponent = () => {
     const[lastName, setLastName] = useState('');
     const[userName, setuserName] = useState('');
     const[email, setEmail] = useState('');
+    const[password, setPassword] = useState('');
 
     useEffect(() =>{ 
 
@@ -32,6 +33,7 @@ export const UserComponent = () => {
                 setLastName(response.data.lastName);
                 setuserName(response.data.userName);
                 setEmail(response.data.email);
+                setPassword(response.data.password);
             }).catch(error => {
                 console.error(error);
             })
@@ -46,6 +48,7 @@ export const UserComponent = () => {
         lastName: '',
         userName: '',
         email: '',
+        password: '',
     })
 
     function handleFirstName(event){
@@ -68,13 +71,18 @@ export const UserComponent = () => {
         setEmail(event.target.value);
     }
 
+    function handlePassword(event){
+        //Gets value from form and applies it to email useState variable
+        setPassword(event.target.value);
+    }
+
     //saveUser function
     function saveUser(event){
         event.preventDefault();
         //Checks if validateForm returns true
         if(validateForm()){
             //Applies fields from form to user object
-            const user = {firstName, lastName, userName, email};
+            const user = {firstName, lastName, userName, email, password};
 
             // //Prints user object to console (For testing purposes)
             console.log(user);
@@ -135,10 +143,10 @@ export const UserComponent = () => {
             valid = false;
         }
 
-        if(email.trim() != ''){
-            errorsCopy.email = '';
+        if(password.trim() != ''){
+            errorsCopy.password = '';
         }else {
-            errorsCopy.email = 'An email is required.';
+            errorsCopy.password = 'A password is required.';
             valid = false;
         }
 
@@ -162,7 +170,7 @@ export const UserComponent = () => {
   return (
     <div className="container">
         <br/>
-        {/* <button type="button" class="btn btn-primary" onClick={goBack}>Go Back</button> */}
+        {/* Go back button that currently doesnt work: <button type="button" class="btn btn-primary" onClick={goBack}>Go Back</button> */}
         <div className='row'>
             {/* card div with some bootstrap styling that shrinks the card and centers it */}
             <div className = 'card col-md-6 offset-md-3'>
@@ -206,7 +214,7 @@ export const UserComponent = () => {
                         
                         {/* Field for userName */}
                         <div className='form-group mb-2'>
-                            <label className='form-label'>userName:</label>
+                            <label className='form-label'>Username:</label>
                             <input 
                                 type='text'
                                 placeholder='Username'
@@ -234,6 +242,22 @@ export const UserComponent = () => {
 
                             </input>
                             { errors.email && <div className='invalid-feedback'> {errors.email} </div> }
+                        </div>
+
+                        {/* Field for password */}
+                        <div className='form-group mb-2'>
+                            <label className='form-label'>User Password:</label>
+                            <input 
+                                type='password'
+                                placeholder='Password'
+                                name='password'
+                                // passing useState firstName variable from line 13 to value
+                                value={password}
+                                className={`form-control ${errors.password ? 'is-invalid': ''}`}
+                                onChange={handlePassword}>
+
+                            </input>
+                            { errors.password && <div className='invalid-feedback'> {errors.password} </div> }
                         </div>
 
                         {/* submit button & back button*/}

@@ -15,13 +15,16 @@ import java.util.stream.Collectors;
 
 //Implementing UserService interface
 //Impl stands for implementation, just in case you forget for some odd reason
+//@Service annotates this class as the service layer
 @Service
 @AllArgsConstructor
 public class UserServiceImpl implements UserService{
 
+    //Declaring an instance of UserRepository class
     private UserRepository userRepository;
 
     //createUser method / Creates a user
+
     @Override
     public UserDTO createUser(UserDTO userDTO) {
         //taking dto from input and converting it to an entity using method from UserMapper class
@@ -33,6 +36,7 @@ public class UserServiceImpl implements UserService{
     }
 
     //Method for finding users by id
+
     @Override
     //Method returns a UserDTO
     public UserDTO getUserByID(int userID) {
@@ -46,6 +50,7 @@ public class UserServiceImpl implements UserService{
         return UserMapper.mapToUserDTO(user);
     }
 
+    //updateUser method / updates a selected user
 
     @Override
     public UserDTO updateUser(int userID, UserDTO updatedUser) {
@@ -58,13 +63,16 @@ public class UserServiceImpl implements UserService{
         user.setFirstName(updatedUser.getFirstName());
         user.setLastName(updatedUser.getLastName());
         user.setEmail(updatedUser.getEmail());
+        user.setPassword(updatedUser.getPassword());
 
-
+        //Using jpa to save user to database (I think????)
         User newUpdatedUser = userRepository.save(user);
 
         //Returning updated user
         return UserMapper.mapToUserDTO(newUpdatedUser);
     }
+
+    //DeleteUser method / deletes a selected user
 
     @Override
     public void deleteUser(int userID) {
@@ -75,11 +83,12 @@ public class UserServiceImpl implements UserService{
         userRepository.deleteById(userID);
     }
 
-    //getAllUsers method / gets all users
+    //getAllUsers method / lists all users
 
     @Override
     public List<UserDTO> getAllUsers() {
         List<User> users = userRepository.findAll();
+        //Takes all the users in database and maps them to dtos
         return users.stream().map((user) -> UserMapper.mapToUserDTO(user))
                 .collect(Collectors.toList());
     }
