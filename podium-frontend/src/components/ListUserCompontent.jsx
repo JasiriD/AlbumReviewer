@@ -42,7 +42,7 @@ function ListUserCompontent() {
     }
 
     function removeUser(id){
-        console.log(id);
+        /* console.log(id); */
 
         deleteUser(id).then((response) =>{
             //Calls getAllUsers funtion after deletion to reload the list of users

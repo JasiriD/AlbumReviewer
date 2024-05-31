@@ -6,15 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="still working on mapping many to one relationship with reviews and users. I think im about done and simply need to finish up the CRUD operations on review object">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/FooterComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/FooterComponent.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/HomePageComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/HomePageComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/ReviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/dto/ReviewDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/dto/ReviewDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/mapper/ReviewMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/mapper/ReviewMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/ReviewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/ReviewServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/ListUserCompontent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/ListUserCompontent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/LoginComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/LoginComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/ReviewComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/ReviewComponent.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +45,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="addingGetAllEmployees" />
+        <entry key="$PROJECT_DIR$" value="creatingLoginForm" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,7 +81,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "android.gradle.sync.needed": "true",
-    "git-widget-placeholder": "creatingLoginForm",
+    "git-widget-placeholder": "enablingUserReviewWritingReading",
     "last_opened_file_path": "C:/Users/Jasiri/Documents/LaunchCode/LC IntelliJ/CodingEventsJavaAddBootstrap",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }

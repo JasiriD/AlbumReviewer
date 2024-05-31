@@ -1,7 +1,7 @@
 //rafce is the command to create a simple baseline react component
 import React, {useEffect, useState} from 'react'
 import { useNavigate } from 'react-router'
-import { listUsers, getUserByID } from '../services/UserService'
+import { listUsers,  } from '../services/UserService'
 
 const LoginComponent = ({ sendDataToParent }) => {
 
@@ -97,6 +97,8 @@ const LoginComponent = ({ sendDataToParent }) => {
                 console.log("Yay!");
                 console.log(users[user].id);
                 /* navigate("/users"); */
+
+                //Sending user ID to homepage component
                 sendDataToParent(users[user].id);
                 return(users[user].id);
             }
@@ -155,7 +157,7 @@ const LoginComponent = ({ sendDataToParent }) => {
             </div>
             <br/>
             <div className='text-center'>
-                <button className='btn btn-danger' onClick={checkUsers}>Login</button>
+                <button className='btn btn-primary' onClick={checkUsers}>Login</button>
             </div>
             <br/>
         </div>

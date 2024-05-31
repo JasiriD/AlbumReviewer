@@ -3,10 +3,13 @@ import { listUsers, getUserByID } from '../services/UserService'
 import LoginComponent from './LoginComponent';
 import { listReviews } from '../services/ReviewService';
 import ReviewComponent from './ReviewComponent';
+import ReviewWriteComponent from './ReviewWriteComponent';
 
 const HomePageComponent = () => {
 
     const[currentID, setCurrentID] = useState(0);
+
+    const reviewData = "This is test review data";
 
 
     //Function to handle data from LoginComponent
@@ -32,7 +35,7 @@ const HomePageComponent = () => {
                 //If currentID matches, do this
                 }else{
                     console.log(reviews);
-                    return <p>You are signed in as {users[user].userName}</p>
+                    return <p className='text-center'>You are signed in as {users[user].userName}</p>
                 }
             }
             /* return <p className='text-center'>Logged in as {getUserByID(currentID)}</p>; */
@@ -80,11 +83,38 @@ const HomePageComponent = () => {
         getAllReviews();
     },[])
 
+    const[title, setTitle] = useState('');
+    const[atitle, setaTitle] = useState('');
+    const[body, setBody] = useState('');
+
+    //Creating useState for errors (When the new review doesn't have proper variables in the form)
+    //Each field here will contain errors pertaining to their cooresponding user field
+    const [errors, setErrors] = useState({
+        title: '',
+        atitle: '',
+        body: '',
+    })
+
+    function handleTitle(event){
+        //Gets value from form and applies it to title useState variable
+        setTitle(event.target.value);
+    }
+
+    function handleaTitle(event){
+        //Gets value from form and applies it to album title useState variable
+        setaTitle(event.target.value);
+    }
+
+    function handleBody(event){
+        //Gets value from form and applies it to body useState variable
+        setBody(event.target.value);
+    }
+
 
 
 
     return (
-        <div>
+        <div className='container'>
             
             <h1 className='display-1 text-center'>
                 Podium
@@ -93,26 +123,72 @@ const HomePageComponent = () => {
             {checkLoggedIn()}
             {/* Reviews Container */}
             <br/>
-            <div className='container'>
-                <div className='row'>
-                    <div className = 'card col-md-6'>
+            <div className=''>
+                {/* Makes cards display horizontally instead of vertically */}
+                <div className=''>
+                    <div className = 'card col-md-6 offset-md-3'>
                         <h3 className='card-title text-center'>
                             Your Reviews
                         </h3>
                         <div className='card-body'>
                                 <ReviewComponent/>
-                        </div>    
+                        </div>
                     </div>
-                    <div className = 'card col-md-6'>
-                        <h3 className='card-title text-center'>
-                            Your Reviews
-                        </h3>
+                    <br/>
+
+                    <div className = 'card col-md-6 offset-md-3'>
                         <div className='card-body'>
-                                <ReviewComponent/>
-                        </div>    
+                            <h3 className='text-center'>Write New Review</h3>
+                            <form>
+                                {/* Field for review title */}
+                                <div className='form-group'>
+                                    <label className='form-label text-center'>Album Title:</label>
+                                    <input
+                                    type='text'
+                                    name='atitle'
+                                    className='form-control'
+                                    onChange={handleaTitle}
+                                    ></input>
+
+                                </div>
+                                {/* Field for album title*/}
+                                <div className='form-group'>
+                                    <label className='form-label text-center'>Review Title:</label>
+                                    <input
+                                    type='text'
+                                    name='title'
+                                    className='form-control'
+                                    onChange={handleTitle}
+                                    ></input>
+
+                                </div>
+                                {/* Field for review body*/}
+                                <div className='form-group'>
+                                    <label className='form-label text-center'>Review:</label>
+                                    
+                                    <textarea
+                                    type='text'
+                                    name='body'
+                                    className='form-control'
+                                    rows={7}
+                                    onChange={handleBody}
+                                    ></textarea>
+
+                                </div>
+                                <br/>   
+                                {/*Submit button*/}
+                                <div className='text-center'>
+                        <           button className='btn btn-success'>New Review</button>
+                                </div>  
+                                
+                            </form>
+                        </div>
                     </div>
+
+
                 </div>
-                
+                <br/>
+                <br/>
             </div>
         </div>
         
