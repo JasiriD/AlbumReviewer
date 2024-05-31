@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import { listUsers, getUserByID } from '../services/UserService'
 import LoginComponent from './LoginComponent';
+import { listReviews } from '../services/ReviewService';
+import ReviewComponent from './ReviewComponent';
 
 const HomePageComponent = () => {
 
@@ -29,6 +31,7 @@ const HomePageComponent = () => {
 
                 //If currentID matches, do this
                 }else{
+                    console.log(reviews);
                     return <p>You are signed in as {users[user].userName}</p>
                 }
             }
@@ -59,6 +62,25 @@ const HomePageComponent = () => {
     },[])
 
 
+    //Creating useState for reviews
+    const [reviews, setReviews] = useState([])
+
+    //getAllReviews function
+    function getAllReviews(){
+        listReviews().then((response) => {
+            //calling useState function to apply the response data from our get request to reviews object
+            setReviews(response.data)
+        }).catch(error => {
+            console.error(error);
+        })
+    }
+
+    //Calls getAllReviews function
+    useEffect(()=> {
+        getAllReviews();
+    },[])
+
+
 
 
     return (
@@ -67,17 +89,31 @@ const HomePageComponent = () => {
             <h1 className='display-1 text-center'>
                 Podium
             </h1>
-            <div className='container'>
-                <div className = 'card col-md-6'>
-                    <h3 className='card-title text-center'>
-                        Your Reviews
-                    </h3>
-                    <div className='card-body'>
-                            placehodler text
-                    </div>    
-                </div>
-            </div>
+            {/* Login component. Checks if user is logged in. If not, put login form */}
             {checkLoggedIn()}
+            {/* Reviews Container */}
+            <br/>
+            <div className='container'>
+                <div className='row'>
+                    <div className = 'card col-md-6'>
+                        <h3 className='card-title text-center'>
+                            Your Reviews
+                        </h3>
+                        <div className='card-body'>
+                                <ReviewComponent/>
+                        </div>    
+                    </div>
+                    <div className = 'card col-md-6'>
+                        <h3 className='card-title text-center'>
+                            Your Reviews
+                        </h3>
+                        <div className='card-body'>
+                                <ReviewComponent/>
+                        </div>    
+                    </div>
+                </div>
+                
+            </div>
         </div>
         
         

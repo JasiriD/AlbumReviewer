@@ -12,6 +12,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class ReviewDTO {
     private int id;
+    private String aTitle;
     private String title;
     private String body;
     private User user;

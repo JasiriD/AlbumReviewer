@@ -65,7 +65,7 @@ public class UserServiceImpl implements UserService{
         user.setEmail(updatedUser.getEmail());
         user.setPassword(updatedUser.getPassword());
 
-
+        //Using jpa to save user to database (I think????)
         User newUpdatedUser = userRepository.save(user);
 
         //Returning updated user
@@ -83,7 +83,7 @@ public class UserServiceImpl implements UserService{
         userRepository.deleteById(userID);
     }
 
-    //getAllUsers method / gets all users
+    //getAllUsers method / lists all users
 
     @Override
     public List<UserDTO> getAllUsers() {

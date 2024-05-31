@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="More progress made on main website page, now working on reviews entity in a many to one relationship with users entity">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/mapper/ReviewMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/repository/ReviewRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/ReviewService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/ReviewServiceImpl.java" afterDir="false" />
+    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="still working on mapping many to one relationship with reviews and users. I think im about done and simply need to finish up the CRUD operations on review object">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/HomePageComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/HomePageComponent.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/ReviewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/dto/ReviewDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/dto/ReviewDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/mapper/ReviewMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/mapper/ReviewMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/ReviewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/ReviewServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jasirid/demo/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -399,7 +399,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717112682013</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="still working on mapping many to one relationship with reviews and users. I think im about done and simply need to finish up the CRUD operations on review object">
+      <option name="closed" value="true" />
+      <created>1717159312085</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1717159312085</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -414,7 +422,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="First time sitting down for the day,also made some comments in UserController.java" />
     <MESSAGE value="Created getUserByID method in UserService" />
     <MESSAGE value="Creating NotFoundException class" />
     <MESSAGE value="Created getUserByID method, also changed ID back to an int" />
@@ -439,6 +446,7 @@
     <MESSAGE value="Making progress on login form as well as laying groundwork for user system" />
     <MESSAGE value="Did alot of stuff. Login form now works properly and recognizes user, project shifted into a single page concept, and progress made on main website page." />
     <MESSAGE value="More progress made on main website page, now working on reviews entity in a many to one relationship with users entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="More progress made on main website page, now working on reviews entity in a many to one relationship with users entity" />
+    <MESSAGE value="still working on mapping many to one relationship with reviews and users. I think im about done and simply need to finish up the CRUD operations on review object" />
+    <option name="LAST_COMMIT_MESSAGE" value="still working on mapping many to one relationship with reviews and users. I think im about done and simply need to finish up the CRUD operations on review object" />
   </component>
 </project>

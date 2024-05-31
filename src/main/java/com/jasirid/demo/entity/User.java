@@ -3,6 +3,8 @@ package com.jasirid.demo.entity;
 //Lombok is a java library that makes it so I don't have to write/generate each constructor, getter, setter, etc for
 //my class files. At least, that's how I understand it. Ill update this later if Im wrong.
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -49,6 +51,9 @@ public class User {
 
     @Column(name= "reviews")
     @OneToMany(fetch = FetchType.LAZY,mappedBy = "user")
+    //JsonManagedReference Prevents infinite recurson on get request
+    @JsonManagedReference
+    @JsonBackReference
     private List<Review> reviews;
 
 
