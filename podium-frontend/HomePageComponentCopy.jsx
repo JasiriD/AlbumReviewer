@@ -5,20 +5,14 @@ import { addReview, listReviews } from '../services/ReviewService';
 import ReviewComponent from './ReviewComponent';
 import ReviewWriteComponent from './ReviewWriteComponent';
 import { func } from 'prop-types';
-import { useNavigate } from 'react-router-dom'
 
-const HomePageComponent = ({ sendDataToParent }) => {
+const HomePageComponent = () => {
 
     const[currentID, setCurrentID] = useState(0);
 
-    //Setting const function to useNavigate because you can't use it directly (HAS TO BE INSIDE INITIAL FUNCTION (WITH BRACKETS AT END!!!!) ! ! ! ! !)
-    const navigate = useNavigate();
-
     const reviewData = "This is test review data";
 
-    let user = {};
-
-    let changecurrentuser = 0;
+    const[currentUser, setCurrentUser] = useState({})
 
     //Function to handle data from LoginComponent
     function handleDataFromChild(data) {
@@ -34,16 +28,15 @@ const HomePageComponent = ({ sendDataToParent }) => {
         //If currentID is not 0 (This will represent if user is logged in already; default is 0)
         if(currentID != 0){
             //if user is logged in, do this
-            /* console.log("true"); */
+            console.log("true");
             //For loop iterating through users array
             for(let user in users){
                 //Pass if currentID doesnt match current user
                 if(users[user].id != currentID){
-
+                    return <p className='text-center'>what the fuck</p>
                 //If currentID matches, do this
                 }else{
-                    /* console.log(reviews); */
-                    /* setCurrentUser(retrieveUserByID(currentID)) */
+                    console.log(reviews);
                     return <p className='text-center'>You are signed in as {users[user].userName}</p>
                 }
             }
@@ -70,14 +63,13 @@ const HomePageComponent = ({ sendDataToParent }) => {
 
     //retrueveUserByID function
     function retrieveUserByID(){
-        getUserByID(currentID).then((response) => {
-            return(response.data);
+        getUserByID(id).then((response) => {
         }).catch(error => {
             console.error(error);
         })
 
     }
-
+    
     //Calls getAllUsers function
     useEffect(()=> {
         getAllUsers();
@@ -169,35 +161,27 @@ const HomePageComponent = ({ sendDataToParent }) => {
         //Setting real errors to the copy we made here
         setErrors(errorsCopy);
 
-        //console.log(valid);
-
         return valid;
     }
 
     function submitReview(){
 
         //Checks if validateReview function returns true
-        if(validateReview()){
+        if(validateReview){
             //This also prevents the page from reloading for no reason
             event.preventDefault();
 
-            user.id = currentID;
 
             //applies data in form to review object, along with the currently signed in user
-            const review = {atitle, title, body, user}
+            const review = {atitle, title, body, currentID}
 
-            console.log(review);
-            
+            /* console.log(review); */
 
             addReview(review).then((response) =>{
                 console.log(response.data);
-                getAllReviews();
             }).catch(error => {
                 console.error(error);
             })
-
-            window.location.reload();
-            
         }
     }
 
@@ -222,7 +206,7 @@ const HomePageComponent = ({ sendDataToParent }) => {
                             Your Reviews
                         </h3>
                         <div className='card-body'>
-                                <ReviewComponent />
+                                <ReviewComponent/>
                         </div>
                     </div>
                     <br/>

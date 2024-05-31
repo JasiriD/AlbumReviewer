@@ -93,7 +93,7 @@ function ListUserCompontent() {
         {/*Button that calls addUser funcion on click, navigating you to addUser page*/}
         <div className='text-center'>
             <button type="button" className="btn btn-success me-2" onClick={addUser}>Create Account</button>
-            <button type="button" className="btn btn-success" onClick={login}>Login</button>
+            {/* <button type="button" className="btn btn-success" onClick={login}>Login</button> */}
         </div>
 
     </div>

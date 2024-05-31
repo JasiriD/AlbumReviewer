@@ -13,9 +13,6 @@ const HeaderComponent = () => {
                 <a className="nav-link" href="/home">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/login">Log in</a>
-              </li>
-              <li className="nav-item">
                 <a className="nav-link" href="/users">Users</a>
               </li>
             </ul>

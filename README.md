@@ -1,2 +1,3 @@
 # AlbumReviewer
-Final LaunchCode project
+
+LaunchCode capstone project - Podium

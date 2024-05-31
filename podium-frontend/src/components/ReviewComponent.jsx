@@ -10,6 +10,12 @@ const ReviewComponent = () => {
     let highestID = 0;
     let currentLoopID = 0;
 
+    const[currentID, setCurrentID] = useState(0);
+
+    function handleDataFromChild(data) {
+        setCurrentID(data);
+    }
+
     //Creating useState for reviews
     const [reviews, setReviews] = useState([])
 
@@ -62,11 +68,16 @@ const ReviewComponent = () => {
     function removeReview(id){
         /* console.log(id); */
 
-        deleteReview(id).then((response) =>{
-            getAllReviews();
-        }).catch.error(error => {
-            console.error(error);
-        });
+        for(let review in reviews){
+            if(reviews[review].id){
+                console.log("Yay!");
+                deleteReview(id).then((response) =>{
+                    getAllReviews();
+                }).catch.error(error => {
+                    console.error(error);
+                });
+            }
+        }
     }
 
 
