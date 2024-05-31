@@ -25,9 +25,16 @@ public class Review {
     private String body;
 
     //ManyToOne Annotation announces that many of these will be attributed to one entry in another table
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
     //JoinColumn makes this entity have a foreign id that maps to the primary id of a user entry
     //This is all done to make it so that we can have multiple reviews per user
     @JoinColumn(name = "user_id")
     private User user;
+
+
+    //Got this from StackOverflow because my foreign key was returning null when creating a review jpa entity
+/*    public Review(String title, String body){
+        this.title = title;
+        this.body = body;
+    }*/
 }

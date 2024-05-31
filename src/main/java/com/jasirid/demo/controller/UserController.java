@@ -12,7 +12,7 @@ import java.util.List;
 
 
 //RestController annotation allows this class to handle HTTP requests
-//CrossOrgin allows react application/client to call user rest APIS
+//CrossOrgin allows React application/client to call user rest APIS
 @CrossOrigin("*")
 @RestController
 //Base url for rest APIs that are built within this controller
@@ -29,7 +29,7 @@ public class UserController {
     @PostMapping
     //@RequestBody annotation takes JSON from HTTP request and converts it into the userDTO java object
     //Method's return type is ResponseEntity of type UserDTO
-    //Not sure what RequestBody is, I believe you can use it to configure http responses (such as error messages) but what it's doing here I am clueless to
+    //Not sure what ResponseEntity is, I believe you can use it to configure http responses (such as error messages) but what it's doing here I am clueless to
     public ResponseEntity<UserDTO> createUser(@RequestBody UserDTO userDTO){
         UserDTO savedUser = userService.createUser(userDTO);
         return new ResponseEntity<>(savedUser, HttpStatus.CREATED);
