@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Did alot, most notably tou can now delete reviews using react app. Reviews are visible in app. A from to write new reviews is currently being added.">
+    <list default="true" id="e8575795-31b4-4cba-8c7d-4906a656b3a8" name="Changes" comment="Final commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/HeaderComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/HeaderComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/HomePageComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/HomePageComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/ListUserCompontent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/ListUserCompontent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/LoginComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/LoginComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/ReviewComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/ReviewComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium-frontend/src/components/UserComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/podium-frontend/src/components/UserComponent.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -413,7 +406,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717181481266</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Final commit">
+      <option name="closed" value="true" />
+      <created>1717189237689</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1717189237689</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -428,7 +429,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Creating NotFoundException class" />
     <MESSAGE value="Created getUserByID method, also changed ID back to an int" />
     <MESSAGE value="Created get method within userController" />
     <MESSAGE value="Did lots of work adding updateUser method, in UserController, UserService and UserServiceImpl files" />
@@ -453,6 +453,7 @@
     <MESSAGE value="More progress made on main website page, now working on reviews entity in a many to one relationship with users entity" />
     <MESSAGE value="still working on mapping many to one relationship with reviews and users. I think im about done and simply need to finish up the CRUD operations on review object" />
     <MESSAGE value="Did alot, most notably tou can now delete reviews using react app. Reviews are visible in app. A from to write new reviews is currently being added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Did alot, most notably tou can now delete reviews using react app. Reviews are visible in app. A from to write new reviews is currently being added." />
+    <MESSAGE value="Final commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final commit" />
   </component>
 </project>
