@@ -29,7 +29,9 @@ const ReviewComponent = () => {
     <div>{reviews.map(review =>
     <div>
         <h3>{review.atitle}</h3>
+        <h3>{review.title}</h3>
         <p>{review.body}</p>
+        <footer>written by {review.userId}</footer>
     </div>
     )}</div>
   )

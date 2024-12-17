@@ -103,14 +103,6 @@ const HomePageComponent = () => {
                                 <ReviewComponent/>
                         </div>    
                     </div>
-                    <div className = 'card col-md-6'>
-                        <h3 className='card-title text-center'>
-                            Your Reviews
-                        </h3>
-                        <div className='card-body'>
-                                <ReviewComponent/>
-                        </div>    
-                    </div>
                 </div>
                 
             </div>
